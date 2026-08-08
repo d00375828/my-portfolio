@@ -36,6 +36,9 @@
           <a href="#projects" class="px-5 py-2.5 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white font-medium text-sm transition-colors shadow-lg shadow-indigo-500/20">
             View Projects
           </a>
+          <a href="/Resume_2026.pdf" download="Andy-Rich-Resume.pdf" class="px-5 py-2.5 rounded-lg bg-slate-100 hover:bg-white text-slate-950 font-medium text-sm transition-colors">
+            Download Résumé
+          </a>
           <a href="https://github.com/d00375828" target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 rounded-lg bg-slate-900 border border-slate-800 hover:bg-slate-800 text-slate-200 font-medium text-sm transition-colors">
             GitHub
           </a>
@@ -53,7 +56,7 @@
         </div>
 
         <div class="grid gap-8 md:grid-cols-2">
-          <!-- Project Card 1 -->
+          <!-- Project Card 1 / Blueprint -->
           <div class="group relative rounded-2xl bg-slate-900/60 border border-slate-800/80 p-6 flex flex-col justify-between hover:border-slate-700/80 transition-all">
             <div class="space-y-4">
               <div class="flex items-center justify-between">
@@ -65,7 +68,10 @@
                 </div>
               </div>
               <p class="text-sm text-slate-400 leading-relaxed">
-                AI Project Timeline Manager is a full-stack app that helps users turn a high-level goal into a structured project timeline. It uses AI to generate tasks and analyze project progress.
+                <span class="block text-xs font-semibold uppercase tracking-wider text-indigo-400 mb-1">The problem</span>
+                Turns an ambiguous project goal into an actionable, trackable plan.
+                <span class="block text-xs font-semibold uppercase tracking-wider text-indigo-400 mt-3 mb-1">What I built</span>
+                A full-stack project manager with project CRUD APIs, ordered tasks and priority states, plus AI actions that generate a plan or analyze project health and next steps.
               </p>
             </div>
 
@@ -79,7 +85,96 @@
             </div>
           </div>
 
-          <!-- Project Card 2 -->
+          <!-- Project Card 2 / Socket Racer -->
+          <div class="group relative rounded-2xl bg-slate-900/60 border border-slate-800/80 p-6 flex flex-col justify-between hover:border-slate-700/80 transition-all">
+            <div class="space-y-4">
+              <div class="flex items-center justify-between">
+                <h3 class="text-xl font-bold text-slate-100 group-hover:text-indigo-400 transition-colors">Socket Racer</h3>
+                <div class="flex items-center gap-3 text-slate-400">
+                  <a href="https://github.com/d00375828/Socket-Racer" target="_blank" class="hover:text-white transition-colors" title="View Source">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                  </a>
+                </div>
+              </div>
+              <p class="text-sm text-slate-400 leading-relaxed">
+                <span class="block text-xs font-semibold uppercase tracking-wider text-indigo-400 mb-1">The problem</span>
+                Creates a shared, two-screen multiplayer game where one display hosts the race and other devices become controllers.
+                <span class="block text-xs font-semibold uppercase tracking-wider text-indigo-400 mt-3 mb-1">What I built</span>
+                A Node/Express app with a WebSocket game server that validates player input and synchronizes the lobby, countdown, race state, collisions, pickups, results, and rematches across connected clients.
+              </p>
+            </div>
+
+            <div class="pt-6 space-y-4">
+              <div class="flex flex-wrap gap-2">
+                <span class="px-2.5 py-1 text-xs font-medium bg-slate-800 text-slate-300 rounded-md">WebSockets</span>
+                <span class="px-2.5 py-1 text-xs font-medium bg-slate-800 text-slate-300 rounded-md">Express</span>
+                <span class="px-2.5 py-1 text-xs font-medium bg-slate-800 text-slate-300 rounded-md">Node.js</span>
+                <span class="px-2.5 py-1 text-xs font-medium bg-slate-800 text-slate-300 rounded-md">Render</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project Card 3 / Find your Voice -->
+          <div class="group relative rounded-2xl bg-slate-900/60 border border-slate-800/80 p-6 flex flex-col justify-between hover:border-slate-700/80 transition-all">
+            <div class="space-y-4">
+              <div class="flex items-center justify-between">
+                <h3 class="text-xl font-bold text-slate-100 group-hover:text-indigo-400 transition-colors">Find Your voice
+                </h3>
+                <div class="flex items-center gap-3 text-slate-400">
+                  <a href="https://github.com/d00375828/SeniorProject" target="_blank" class="hover:text-white transition-colors" title="View Source">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                  </a>
+                </div>
+              </div>
+              <p class="text-sm text-slate-400 leading-relaxed">
+                <span class="block text-xs font-semibold uppercase tracking-wider text-indigo-400 mb-1">The problem</span>
+                Gives people a low-pressure way to practice challenging conversations and build communication confidence before the real thing.
+                <span class="block text-xs font-semibold uppercase tracking-wider text-indigo-400 mt-3 mb-1">What I built</span>
+                A voice-first mobile role-play app where users select a scenario, record each turn, receive a transcribed AI response with voice playback, and finish with a saved coaching summary of wins, drills, and a next step.
+              </p>
+            </div>
+
+            <div class="pt-6 space-y-4">
+              <div class="flex flex-wrap gap-2">
+                <span class="px-2.5 py-1 text-xs font-medium bg-slate-800 text-slate-300 rounded-md">React Native</span>
+                <span class="px-2.5 py-1 text-xs font-medium bg-slate-800 text-slate-300 rounded-md">Expo</span>
+                <span class="px-2.5 py-1 text-xs font-medium bg-slate-800 text-slate-300 rounded-md">Express</span>
+                <span class="px-2.5 py-1 text-xs font-medium bg-slate-800 text-slate-300 rounded-md">Google Gemini</span>
+                <span class="px-2.5 py-1 text-xs font-medium bg-slate-800 text-slate-300 rounded-md">Speech-to-Text</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project Card 4 / WAV Creator -->
+          <div class="group relative rounded-2xl bg-slate-900/60 border border-slate-800/80 p-6 flex flex-col justify-between hover:border-slate-700/80 transition-all">
+            <div class="space-y-4">
+              <div class="flex items-center justify-between">
+                <h3 class="text-xl font-bold text-slate-100 group-hover:text-indigo-400 transition-colors">WAV Audio Creator</h3>
+                <div class="flex items-center gap-3 text-slate-400">
+                  <a href="https://github.com/d00375828/wav-creator" target="_blank" class="hover:text-white transition-colors" title="View Source">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                  </a>
+                </div>
+              </div>
+              <p class="text-sm text-slate-400 leading-relaxed">
+                <span class="block text-xs font-semibold uppercase tracking-wider text-indigo-400 mb-1">The problem</span>
+                Generates valid stereo WAV files from synthesized sound rather than relying on pre-recorded audio.
+                <span class="block text-xs font-semibold uppercase tracking-wider text-indigo-400 mt-3 mb-1">What I built</span>
+                A modular C++ synthesis pipeline: waveforms and ADSR envelopes combine into instruments, which render notes and musical scores into left/right audio channels and a WAV file.
+              </p>
+            </div>
+
+            <div class="pt-6 space-y-4">
+              <div class="flex flex-wrap gap-2">
+                <span class="px-2.5 py-1 text-xs font-medium bg-slate-800 text-slate-300 rounded-md">C++</span>
+                <span class="px-2.5 py-1 text-xs font-medium bg-slate-800 text-slate-300 rounded-md">Audio Synthesis</span>
+                <span class="px-2.5 py-1 text-xs font-medium bg-slate-800 text-slate-300 rounded-md">WAV File Format</span>
+                <span class="px-2.5 py-1 text-xs font-medium bg-slate-800 text-slate-300 rounded-md">CLI</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project Card 5 / Shadow -->
           <div class="group relative rounded-2xl bg-slate-900/60 border border-slate-800/80 p-6 flex flex-col justify-between hover:border-slate-700/80 transition-all">
             <div class="space-y-4">
               <div class="flex items-center justify-between">
@@ -91,7 +186,10 @@
                 </div>
               </div>
               <p class="text-sm text-slate-400 leading-relaxed">
-                Designed a mobile application that provides personalized AI coaching to help users improve communication and confidence. Built architecture for capturing conversations and generating feedback using AI models. Focused on creating an engaging conversational interface for coaching interactions
+                <span class="block text-xs font-semibold uppercase tracking-wider text-indigo-400 mb-1">The problem</span>
+                Gives sales reps a private place to practice pitches and receive actionable communication coaching.
+                <span class="block text-xs font-semibold uppercase tracking-wider text-indigo-400 mt-3 mb-1">What I built</span>
+                A mobile training experience for recording pitches, receiving AI-generated feedback, reviewing performance insights, and continuing practice through a conversational interface.
               </p>
             </div>
 
@@ -105,36 +203,11 @@
             </div>
           </div>
 
-          <!-- Project Card 3 -->
+          <!-- Project Card 6 / Better Bet -->
           <div class="group relative rounded-2xl bg-slate-900/60 border border-slate-800/80 p-6 flex flex-col justify-between hover:border-slate-700/80 transition-all">
             <div class="space-y-4">
               <div class="flex items-center justify-between">
-                <h3 class="text-xl font-bold text-slate-100 group-hover:text-indigo-400 transition-colors">WAV Audio Creator</h3>
-                <div class="flex items-center gap-3 text-slate-400">
-                  <a href="https://github.com/d00375828/wav-creator" target="_blank" class="hover:text-white transition-colors" title="View Source">
-                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-                  </a>
-                </div>
-              </div>
-              <p class="text-sm text-slate-400 leading-relaxed">
-                Built a modular C++ audio synthesis tool that generates custom WAV files from scratch. The project includes waveform generation, envelope shaping, instrument design, score editing, and audio track rendering, using a library-based architecture with multiple command-line programs for creating and exporting sound.              </p>
-            </div>
-
-            <div class="pt-6 space-y-4">
-              <div class="flex flex-wrap gap-2">
-                <span class="px-2.5 py-1 text-xs font-medium bg-slate-800 text-slate-300 rounded-md">LangGraph</span>
-                <span class="px-2.5 py-1 text-xs font-medium bg-slate-800 text-slate-300 rounded-md">Express</span>
-                <span class="px-2.5 py-1 text-xs font-medium bg-slate-800 text-slate-300 rounded-md">MongoDB</span>
-                <span class="px-2.5 py-1 text-xs font-medium bg-slate-800 text-slate-300 rounded-md">Node.js</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Project Card 4 -->
-          <div class="group relative rounded-2xl bg-slate-900/60 border border-slate-800/80 p-6 flex flex-col justify-between hover:border-slate-700/80 transition-all">
-            <div class="space-y-4">
-              <div class="flex items-center justify-between">
-                <h3 class="text-xl font-bold text-slate-100 group-hover:text-indigo-400 transition-colors">WAV Audio Creator</h3>
+                <h3 class="text-xl font-bold text-slate-100 group-hover:text-indigo-400 transition-colors">Better Bet</h3>
                 <div class="flex items-center gap-3 text-slate-400">
                   <a href="https://github.com/d00375828/better-bet" target="_blank" class="hover:text-white transition-colors" title="View Source">
                     <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
@@ -142,40 +215,19 @@
                 </div>
               </div>
               <p class="text-sm text-slate-400 leading-relaxed">
-                A sports matchup projection app that uses a locally hosted LLM to generate projected scores, implied spreads, confidence, and key decision factors for NBA and NFL games.
-
-                Users select a league and teams, review recent performance context, and receive a structured projection powered by an LLM.            </div>
-
-            <div class="pt-6 space-y-4">
-              <div class="flex flex-wrap gap-2">
-                <span class="px-2.5 py-1 text-xs font-medium bg-slate-800 text-slate-300 rounded-md">LangGraph</span>
-                <span class="px-2.5 py-1 text-xs font-medium bg-slate-800 text-slate-300 rounded-md">Express</span>
-                <span class="px-2.5 py-1 text-xs font-medium bg-slate-800 text-slate-300 rounded-md">MongoDB</span>
-                <span class="px-2.5 py-1 text-xs font-medium bg-slate-800 text-slate-300 rounded-md">Node.js</span>
-              </div>
+                <span class="block text-xs font-semibold uppercase tracking-wider text-indigo-400 mb-1">The problem</span>
+                Makes recent NBA and NFL matchup context easier to explore before forming a prediction.
+                <span class="block text-xs font-semibold uppercase tracking-wider text-indigo-400 mt-3 mb-1">What I built</span>
+                A workflow that fetches recent completed games, derives matchup features, and sends them to a locally hosted LLM for structured JSON: projected score, implied spread, confidence, key factors, and notes.
+              </p>
             </div>
-          </div>
-
-          <!-- Project Card 5 -->
-          <div class="group relative rounded-2xl bg-slate-900/60 border border-slate-800/80 p-6 flex flex-col justify-between hover:border-slate-700/80 transition-all">
-            <div class="space-y-4">
-              <div class="flex items-center justify-between">
-                <h3 class="text-xl font-bold text-slate-100 group-hover:text-indigo-400 transition-colors">WAV Audio Creator</h3>
-                <div class="flex items-center gap-3 text-slate-400">
-                  <a href="https://github.com/d00375828/Socket-Racer" target="_blank" class="hover:text-white transition-colors" title="View Source">
-                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-                  </a>
-                </div>
-              </div>
-              <p class="text-sm text-slate-400 leading-relaxed">
-                Socket Racer is a small real-time racing game. One screen acts as the host display, while a second device or browser window can join as a controller and race. It utilizes Websockets to sync game state in real time.             </div>
 
             <div class="pt-6 space-y-4">
               <div class="flex flex-wrap gap-2">
-                <span class="px-2.5 py-1 text-xs font-medium bg-slate-800 text-slate-300 rounded-md">LangGraph</span>
-                <span class="px-2.5 py-1 text-xs font-medium bg-slate-800 text-slate-300 rounded-md">Express</span>
-                <span class="px-2.5 py-1 text-xs font-medium bg-slate-800 text-slate-300 rounded-md">MongoDB</span>
-                <span class="px-2.5 py-1 text-xs font-medium bg-slate-800 text-slate-300 rounded-md">Node.js</span>
+                <span class="px-2.5 py-1 text-xs font-medium bg-slate-800 text-slate-300 rounded-md">Local LLM</span>
+                <span class="px-2.5 py-1 text-xs font-medium bg-slate-800 text-slate-300 rounded-md">Ollama</span>
+                <span class="px-2.5 py-1 text-xs font-medium bg-slate-800 text-slate-300 rounded-md">REST API</span>
+                <span class="px-2.5 py-1 text-xs font-medium bg-slate-800 text-slate-300 rounded-md">Structured JSON</span>
               </div>
             </div>
           </div>
