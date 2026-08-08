@@ -1,13 +1,248 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>my-portfolio</title>
+    <title>Andy Rich | Software Engineer</title>
+    <link rel="stylesheet" href="/src/style.css" />
   </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
+  <body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-indigo-500 selection:text-white">
+    <!-- Navigation -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-slate-950/80 backdrop-blur-md border-b border-slate-800/80">
+      <div class="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
+        <a href="#" class="font-bold text-lg tracking-tight hover:text-indigo-400 transition-colors">AR<span class="text-indigo-500">.</span></a>
+        <nav class="flex items-center gap-6 text-sm font-medium text-slate-300">
+          <a href="#about" class="hover:text-white transition-colors">About</a>
+          <a href="#projects" class="hover:text-white transition-colors">Projects</a>
+          <a href="#skills" class="hover:text-white transition-colors">Skills</a>
+          <a href="#contact" class="hover:text-white transition-colors">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-6 pt-32 pb-20 space-y-32">
+      <!-- Hero / About Section -->
+      <section id="about" class="space-y-6 pt-8">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 text-xs font-semibold tracking-wide uppercase">
+          Software Engineer
+        </div>
+        <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-slate-50">
+          Building fast, modern web apps <br class="hidden sm:inline" />and scalable backends.
+        </h1>
+        <p class="text-lg text-slate-400 max-w-2xl leading-relaxed">
+          Hi, I'm <strong class="text-slate-200">Andy Rich</strong>. I hold a degree in Software Engineering and specialize in full-stack web applications, real-time architectures, and clean developer workflows.
+        </p>
+        <div class="flex flex-wrap items-center gap-4 pt-2">
+          <a href="#projects" class="px-5 py-2.5 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white font-medium text-sm transition-colors shadow-lg shadow-indigo-500/20">
+            View Projects
+          </a>
+          <a href="https://github.com/d00375828" target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 rounded-lg bg-slate-900 border border-slate-800 hover:bg-slate-800 text-slate-200 font-medium text-sm transition-colors">
+            GitHub
+          </a>
+          <a href="https://linkedin.com/in/andy-rich-1535513a6" target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 rounded-lg bg-slate-900 border border-slate-800 hover:bg-slate-800 text-slate-200 font-medium text-sm transition-colors">
+            LinkedIn
+          </a>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects" class="space-y-10">
+        <div>
+          <h2 class="text-2xl font-bold text-slate-100 tracking-tight">Featured Projects</h2>
+          <p class="text-slate-400 text-sm mt-1">A selection of recent applications and tools I've built.</p>
+        </div>
+
+        <div class="grid gap-8 md:grid-cols-2">
+          <!-- Project Card 1 -->
+          <div class="group relative rounded-2xl bg-slate-900/60 border border-slate-800/80 p-6 flex flex-col justify-between hover:border-slate-700/80 transition-all">
+            <div class="space-y-4">
+              <div class="flex items-center justify-between">
+                <h3 class="text-xl font-bold text-slate-100 group-hover:text-indigo-400 transition-colors">Blue Print</h3>
+                <div class="flex items-center gap-3 text-slate-400">
+                  <a href="https://github.com/d00375828/blue-print" target="_blank" class="hover:text-white transition-colors" title="View Source">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                  </a>
+                </div>
+              </div>
+              <p class="text-sm text-slate-400 leading-relaxed">
+                AI Project Timeline Manager is a full-stack app that helps users turn a high-level goal into a structured project timeline. It uses AI to generate tasks and analyze project progress.
+              </p>
+            </div>
+
+            <div class="pt-6 space-y-4">
+              <div class="flex flex-wrap gap-2">
+                <span class="px-2.5 py-1 text-xs font-medium bg-slate-800 text-slate-300 rounded-md">Vue.js</span>
+                <span class="px-2.5 py-1 text-xs font-medium bg-slate-800 text-slate-300 rounded-md">Node.js</span>
+                <span class="px-2.5 py-1 text-xs font-medium bg-slate-800 text-slate-300 rounded-md">WebSockets</span>
+                <span class="px-2.5 py-1 text-xs font-medium bg-slate-800 text-slate-300 rounded-md">REST API</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project Card 2 -->
+          <div class="group relative rounded-2xl bg-slate-900/60 border border-slate-800/80 p-6 flex flex-col justify-between hover:border-slate-700/80 transition-all">
+            <div class="space-y-4">
+              <div class="flex items-center justify-between">
+                <h3 class="text-xl font-bold text-slate-100 group-hover:text-indigo-400 transition-colors">Shadow</h3>
+                <div class="flex items-center gap-3 text-slate-400">
+                  <a href="https://github.com/d00375828/Shadow-Repo" target="_blank" class="hover:text-white transition-colors" title="View Source">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                  </a>
+                </div>
+              </div>
+              <p class="text-sm text-slate-400 leading-relaxed">
+                Designed a mobile application that provides personalized AI coaching to help users improve communication and confidence. Built architecture for capturing conversations and generating feedback using AI models. Focused on creating an engaging conversational interface for coaching interactions
+              </p>
+            </div>
+
+            <div class="pt-6 space-y-4">
+              <div class="flex flex-wrap gap-2">
+                <span class="px-2.5 py-1 text-xs font-medium bg-slate-800 text-slate-300 rounded-md">LangGraph</span>
+                <span class="px-2.5 py-1 text-xs font-medium bg-slate-800 text-slate-300 rounded-md">Express</span>
+                <span class="px-2.5 py-1 text-xs font-medium bg-slate-800 text-slate-300 rounded-md">MongoDB</span>
+                <span class="px-2.5 py-1 text-xs font-medium bg-slate-800 text-slate-300 rounded-md">Node.js</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project Card 3 -->
+          <div class="group relative rounded-2xl bg-slate-900/60 border border-slate-800/80 p-6 flex flex-col justify-between hover:border-slate-700/80 transition-all">
+            <div class="space-y-4">
+              <div class="flex items-center justify-between">
+                <h3 class="text-xl font-bold text-slate-100 group-hover:text-indigo-400 transition-colors">WAV Audio Creator</h3>
+                <div class="flex items-center gap-3 text-slate-400">
+                  <a href="https://github.com/d00375828/wav-creator" target="_blank" class="hover:text-white transition-colors" title="View Source">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                  </a>
+                </div>
+              </div>
+              <p class="text-sm text-slate-400 leading-relaxed">
+                Built a modular C++ audio synthesis tool that generates custom WAV files from scratch. The project includes waveform generation, envelope shaping, instrument design, score editing, and audio track rendering, using a library-based architecture with multiple command-line programs for creating and exporting sound.              </p>
+            </div>
+
+            <div class="pt-6 space-y-4">
+              <div class="flex flex-wrap gap-2">
+                <span class="px-2.5 py-1 text-xs font-medium bg-slate-800 text-slate-300 rounded-md">LangGraph</span>
+                <span class="px-2.5 py-1 text-xs font-medium bg-slate-800 text-slate-300 rounded-md">Express</span>
+                <span class="px-2.5 py-1 text-xs font-medium bg-slate-800 text-slate-300 rounded-md">MongoDB</span>
+                <span class="px-2.5 py-1 text-xs font-medium bg-slate-800 text-slate-300 rounded-md">Node.js</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project Card 4 -->
+          <div class="group relative rounded-2xl bg-slate-900/60 border border-slate-800/80 p-6 flex flex-col justify-between hover:border-slate-700/80 transition-all">
+            <div class="space-y-4">
+              <div class="flex items-center justify-between">
+                <h3 class="text-xl font-bold text-slate-100 group-hover:text-indigo-400 transition-colors">WAV Audio Creator</h3>
+                <div class="flex items-center gap-3 text-slate-400">
+                  <a href="https://github.com/d00375828/better-bet" target="_blank" class="hover:text-white transition-colors" title="View Source">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                  </a>
+                </div>
+              </div>
+              <p class="text-sm text-slate-400 leading-relaxed">
+                A sports matchup projection app that uses a locally hosted LLM to generate projected scores, implied spreads, confidence, and key decision factors for NBA and NFL games.
+
+                Users select a league and teams, review recent performance context, and receive a structured projection powered by an LLM.            </div>
+
+            <div class="pt-6 space-y-4">
+              <div class="flex flex-wrap gap-2">
+                <span class="px-2.5 py-1 text-xs font-medium bg-slate-800 text-slate-300 rounded-md">LangGraph</span>
+                <span class="px-2.5 py-1 text-xs font-medium bg-slate-800 text-slate-300 rounded-md">Express</span>
+                <span class="px-2.5 py-1 text-xs font-medium bg-slate-800 text-slate-300 rounded-md">MongoDB</span>
+                <span class="px-2.5 py-1 text-xs font-medium bg-slate-800 text-slate-300 rounded-md">Node.js</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project Card 5 -->
+          <div class="group relative rounded-2xl bg-slate-900/60 border border-slate-800/80 p-6 flex flex-col justify-between hover:border-slate-700/80 transition-all">
+            <div class="space-y-4">
+              <div class="flex items-center justify-between">
+                <h3 class="text-xl font-bold text-slate-100 group-hover:text-indigo-400 transition-colors">WAV Audio Creator</h3>
+                <div class="flex items-center gap-3 text-slate-400">
+                  <a href="https://github.com/d00375828/Socket-Racer" target="_blank" class="hover:text-white transition-colors" title="View Source">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                  </a>
+                </div>
+              </div>
+              <p class="text-sm text-slate-400 leading-relaxed">
+                Socket Racer is a small real-time racing game. One screen acts as the host display, while a second device or browser window can join as a controller and race. It utilizes Websockets to sync game state in real time.             </div>
+
+            <div class="pt-6 space-y-4">
+              <div class="flex flex-wrap gap-2">
+                <span class="px-2.5 py-1 text-xs font-medium bg-slate-800 text-slate-300 rounded-md">LangGraph</span>
+                <span class="px-2.5 py-1 text-xs font-medium bg-slate-800 text-slate-300 rounded-md">Express</span>
+                <span class="px-2.5 py-1 text-xs font-medium bg-slate-800 text-slate-300 rounded-md">MongoDB</span>
+                <span class="px-2.5 py-1 text-xs font-medium bg-slate-800 text-slate-300 rounded-md">Node.js</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section id="skills" class="space-y-8">
+        <div>
+          <h2 class="text-2xl font-bold text-slate-100 tracking-tight">Technical Skills</h2>
+          <p class="text-slate-400 text-sm mt-1">Tools, languages, and technologies I work with daily.</p>
+        </div>
+
+        <div class="grid gap-6 sm:grid-cols-3">
+          <div class="p-5 rounded-xl bg-slate-900/40 border border-slate-800/80 space-y-3">
+            <h3 class="text-sm font-semibold text-indigo-400 uppercase tracking-wider">Frontend</h3>
+            <ul class="text-sm text-slate-300 space-y-2">
+              <li>JavaScript (ES6+) / TypeScript</li>
+              <li>Vue.js</li>
+              <li>Tailwind CSS</li>
+              <li>HTML5 / CSS3</li>
+            </ul>
+          </div>
+
+          <div class="p-5 rounded-xl bg-slate-900/40 border border-slate-800/80 space-y-3">
+            <h3 class="text-sm font-semibold text-indigo-400 uppercase tracking-wider">Backend & DB</h3>
+            <ul class="text-sm text-slate-300 space-y-2">
+              <li>Node.js / Express</li>
+              <li>WebSockets</li>
+              <li>MongoDB / Mongoose</li>
+              <li>RESTful API Architecture</li>
+            </ul>
+          </div>
+
+          <div class="p-5 rounded-xl bg-slate-900/40 border border-slate-800/80 space-y-3">
+            <h3 class="text-sm font-semibold text-indigo-400 uppercase tracking-wider">Tools & Workflow</h3>
+            <ul class="text-sm text-slate-300 space-y-2">
+              <li>Git / GitHub</li>
+              <li>LangGraph</li>
+              <li>Vite / npm</li>
+              <li>Vercel / Deployment</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="rounded-2xl bg-indigo-950/30 border border-indigo-500/20 p-8 sm:p-12 text-center space-y-6">
+        <h2 class="text-3xl font-extrabold text-slate-100 tracking-tight">Let's Connect</h2>
+        <p class="text-slate-300 max-w-xl mx-auto text-sm leading-relaxed">
+          I'm currently looking for cool opportunities to learn and grow!! .... and hopefully get paid too.
+        </p>
+        <p class="text-slate-300 max-w-xl mx-auto text-sm leading-relaxed">
+          Feel free to send me an email or reach out on social platforms.
+        </p>
+        <div>
+          <a href="mailto:andynrich1506@gmail.com" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white font-semibold text-sm transition-colors shadow-lg shadow-indigo-500/25">
+            Send an Email
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="border-t border-slate-800/80 py-8 text-center text-xs text-slate-500">
+      <div class="max-w-5xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <p>© 2026 Andy Rich. Last update April 2026</p>
+      </div>
+    </footer>
   </body>
 </html>
