@@ -56,6 +56,11 @@ body {
   margin: 0;
 }
 
+#about h1,
+#about p {
+  color: #fff;
+}
+
 h1,
 h2 {
   font-family: var(--heading);
