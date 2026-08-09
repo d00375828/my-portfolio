@@ -11,13 +11,25 @@
     <header class="fixed top-0 left-0 right-0 z-50 bg-slate-950/80 backdrop-blur-md border-b border-slate-800/80">
       <div class="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
         <a href="#" class="font-bold text-lg tracking-tight hover:text-indigo-400 transition-colors">AR<span class="text-indigo-500">.</span></a>
-        <nav class="flex items-center gap-6 text-sm font-medium text-slate-300">
-          <a href="#about" class="hover:text-white transition-colors">About</a>
-          <a href="#projects" class="hover:text-white transition-colors">Projects</a>
-          <a href="#skills" class="hover:text-white transition-colors">Skills</a>
-          <a href="#contact" class="hover:text-white transition-colors">Contact</a>
+        <nav class="hidden sm:flex items-center gap-6 text-sm font-medium text-slate-300" aria-label="Primary navigation">
+          <a href="#about" data-nav-link class="hover:text-white transition-colors">About</a>
+          <a href="#projects" data-nav-link class="hover:text-white transition-colors">Projects</a>
+          <a href="#skills" data-nav-link class="hover:text-white transition-colors">Skills</a>
+          <a href="#contact" data-nav-link class="hover:text-white transition-colors">Contact</a>
         </nav>
+        <button id="menu-toggle" type="button" class="sm:hidden p-2 -mr-2 text-slate-200 hover:text-white transition-colors" aria-expanded="false" aria-controls="mobile-nav">
+          <span class="sr-only">Toggle navigation</span>
+          <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" stroke-linecap="round" /></svg>
+        </button>
       </div>
+      <nav id="mobile-nav" class="sm:hidden border-t border-slate-800/80 px-6 py-4" aria-label="Mobile navigation" hidden>
+        <div class="max-w-5xl mx-auto grid grid-cols-2 gap-2 text-sm font-medium text-slate-300">
+          <a href="#about" data-nav-link class="rounded-lg px-3 py-2 hover:bg-slate-800 hover:text-white transition-colors">About</a>
+          <a href="#projects" data-nav-link class="rounded-lg px-3 py-2 hover:bg-slate-800 hover:text-white transition-colors">Projects</a>
+          <a href="#skills" data-nav-link class="rounded-lg px-3 py-2 hover:bg-slate-800 hover:text-white transition-colors">Skills</a>
+          <a href="#contact" data-nav-link class="rounded-lg px-3 py-2 hover:bg-slate-800 hover:text-white transition-colors">Contact</a>
+        </div>
+      </nav>
     </header>
 
     <main class="max-w-5xl mx-auto px-6 pt-32 pb-20 space-y-32">
@@ -86,7 +98,7 @@
 
         <div class="grid gap-8 md:grid-cols-2">
           <!-- Project Card 1 / Blueprint -->
-          <div class="group relative rounded-2xl bg-slate-900/60 border border-slate-800/80 p-6 flex flex-col justify-between hover:border-slate-700/80 transition-all">
+          <div class="project-card group relative rounded-2xl bg-slate-900/60 border border-slate-800/80 p-6 flex flex-col justify-between hover:border-slate-700/80 transition-all">
             <div class="space-y-4">
               <div class="flex items-center justify-between">
                 <h3 class="text-xl font-bold text-slate-100 group-hover:text-indigo-400 transition-colors">Blue Print</h3>
@@ -119,11 +131,15 @@
                   <span class="px-2.5 py-1 text-xs font-medium bg-indigo-500/10 border border-indigo-500/20 text-indigo-300 rounded-md">Task state tracking</span>
                 </div>
               </div>
+              <div class="project-actions flex flex-wrap items-center gap-3 pt-1">
+                <span class="text-sm text-slate-500">Demo coming soon</span>
+                <a href="https://github.com/d00375828/blue-print" target="_blank" rel="noopener noreferrer">View Source <span aria-hidden="true">↗</span></a>
+              </div>
             </div>
           </div>
 
           <!-- Project Card 2 / Socket Racer -->
-          <div class="group relative rounded-2xl bg-slate-900/60 border border-slate-800/80 p-6 flex flex-col justify-between hover:border-slate-700/80 transition-all">
+          <div class="project-card group relative rounded-2xl bg-slate-900/60 border border-slate-800/80 p-6 flex flex-col justify-between hover:border-slate-700/80 transition-all">
             <div class="space-y-4">
               <div class="flex items-center justify-between">
                 <h3 class="text-xl font-bold text-slate-100 group-hover:text-indigo-400 transition-colors">Socket Racer</h3>
@@ -156,11 +172,15 @@
                   <span class="px-2.5 py-1 text-xs font-medium bg-indigo-500/10 border border-indigo-500/20 text-indigo-300 rounded-md">Multi-device controller flow</span>
                 </div>
               </div>
+              <div class="project-actions flex flex-wrap items-center gap-3 pt-1">
+                <a href="https://socket-racer.onrender.com" target="_blank" rel="noopener noreferrer" class="project-demo">Live Demo <span aria-hidden="true">↗</span></a>
+                <a href="https://github.com/d00375828/Socket-Racer" target="_blank" rel="noopener noreferrer">View Source <span aria-hidden="true">↗</span></a>
+              </div>
             </div>
           </div>
 
           <!-- Project Card 3 / Find your Voice -->
-          <div class="group relative rounded-2xl bg-slate-900/60 border border-slate-800/80 p-6 flex flex-col justify-between hover:border-slate-700/80 transition-all">
+          <div class="project-card group relative rounded-2xl bg-slate-900/60 border border-slate-800/80 p-6 flex flex-col justify-between hover:border-slate-700/80 transition-all">
             <div class="space-y-4">
               <div class="flex items-center justify-between">
                 <h3 class="text-xl font-bold text-slate-100 group-hover:text-indigo-400 transition-colors">Find Your voice
@@ -195,11 +215,15 @@
                   <span class="px-2.5 py-1 text-xs font-medium bg-indigo-500/10 border border-indigo-500/20 text-indigo-300 rounded-md">Locally saved summaries</span>
                 </div>
               </div>
+              <div class="project-actions flex flex-wrap items-center gap-3 pt-1">
+                <span class="text-sm text-slate-500">Demo coming soon</span>
+                <a href="https://github.com/d00375828/SeniorProject" target="_blank" rel="noopener noreferrer">View Source <span aria-hidden="true">↗</span></a>
+              </div>
             </div>
           </div>
 
           <!-- Project Card 4 / WAV Creator -->
-          <div class="group relative rounded-2xl bg-slate-900/60 border border-slate-800/80 p-6 flex flex-col justify-between hover:border-slate-700/80 transition-all">
+          <div class="project-card group relative rounded-2xl bg-slate-900/60 border border-slate-800/80 p-6 flex flex-col justify-between hover:border-slate-700/80 transition-all">
             <div class="space-y-4">
               <div class="flex items-center justify-between">
                 <h3 class="text-xl font-bold text-slate-100 group-hover:text-indigo-400 transition-colors">WAV Audio Creator</h3>
@@ -232,11 +256,15 @@
                   <span class="px-2.5 py-1 text-xs font-medium bg-indigo-500/10 border border-indigo-500/20 text-indigo-300 rounded-md">Stereo WAV serialization</span>
                 </div>
               </div>
+              <div class="project-actions flex flex-wrap items-center gap-3 pt-1">
+                <span class="text-sm text-slate-500">Demo coming soon</span>
+                <a href="https://github.com/d00375828/wav-creator" target="_blank" rel="noopener noreferrer">View Source <span aria-hidden="true">↗</span></a>
+              </div>
             </div>
           </div>
 
           <!-- Project Card 5 / Shadow -->
-          <div class="group relative rounded-2xl bg-slate-900/60 border border-slate-800/80 p-6 flex flex-col justify-between hover:border-slate-700/80 transition-all">
+          <div class="project-card group relative rounded-2xl bg-slate-900/60 border border-slate-800/80 p-6 flex flex-col justify-between hover:border-slate-700/80 transition-all">
             <div class="space-y-4">
               <div class="flex items-center justify-between">
                 <h3 class="text-xl font-bold text-slate-100 group-hover:text-indigo-400 transition-colors">Shadow</h3>
@@ -269,11 +297,15 @@
                   <span class="px-2.5 py-1 text-xs font-medium bg-indigo-500/10 border border-indigo-500/20 text-indigo-300 rounded-md">Performance insights</span>
                 </div>
               </div>
+              <div class="project-actions flex flex-wrap items-center gap-3 pt-1">
+                <span class="text-sm text-slate-500">Demo coming soon</span>
+                <a href="https://github.com/d00375828/Shadow-Repo" target="_blank" rel="noopener noreferrer">View Source <span aria-hidden="true">↗</span></a>
+              </div>
             </div>
           </div>
 
           <!-- Project Card 6 / Better Bet -->
-          <div class="group relative rounded-2xl bg-slate-900/60 border border-slate-800/80 p-6 flex flex-col justify-between hover:border-slate-700/80 transition-all">
+          <div class="project-card group relative rounded-2xl bg-slate-900/60 border border-slate-800/80 p-6 flex flex-col justify-between hover:border-slate-700/80 transition-all">
             <div class="space-y-4">
               <div class="flex items-center justify-between">
                 <h3 class="text-xl font-bold text-slate-100 group-hover:text-indigo-400 transition-colors">Better Bet</h3>
@@ -305,6 +337,10 @@
                   <span class="px-2.5 py-1 text-xs font-medium bg-indigo-500/10 border border-indigo-500/20 text-indigo-300 rounded-md">Local LLM inference</span>
                   <span class="px-2.5 py-1 text-xs font-medium bg-indigo-500/10 border border-indigo-500/20 text-indigo-300 rounded-md">Structured JSON output</span>
                 </div>
+              </div>
+              <div class="project-actions flex flex-wrap items-center gap-3 pt-1">
+                <span class="text-sm text-slate-500">Demo coming soon</span>
+                <a href="https://github.com/d00375828/better-bet" target="_blank" rel="noopener noreferrer">View Source <span aria-hidden="true">↗</span></a>
               </div>
             </div>
           </div>
@@ -373,5 +409,6 @@
         <p>© 2026 Andy Rich. Last update April 2026</p>
       </div>
     </footer>
+    <script type="module" src="/src/main.js"></script>
   </body>
 </html>
