@@ -21,27 +21,59 @@
     </header>
 
     <main class="max-w-5xl mx-auto px-6 pt-32 pb-20 space-y-32">
-      <!-- Hero / About Section -->
-      <section id="about" class="space-y-6 pt-8">
-        <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-slate-50">
-          Building useful apps, learning quickly, <br class="hidden sm:inline" />and getting better with every project.
-        </h1>
-        <p class="text-lg text-slate-400 max-w-2xl leading-relaxed">
-          Hi, I'm <strong class="text-slate-200">Andy Rich</strong>. I have a degree in Software Engineering and build full-stack web and mobile apps, real-time experiences, and AI-powered features.
-        </p>
-        <div class="flex flex-wrap items-center gap-4 pt-2">
-          <a href="#projects" class="px-5 py-2.5 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white font-medium text-sm transition-colors shadow-lg shadow-indigo-500/20">
-            View Projects
-          </a>
-          <a href="/Resume_2026.pdf" download="Andy-Rich-Resume.pdf" class="px-5 py-2.5 rounded-lg bg-slate-100 hover:bg-white text-slate-950 font-medium text-sm transition-colors">
-            Download Resume
-          </a>
-          <a href="https://github.com/d00375828" target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 rounded-lg bg-slate-900 border border-slate-800 hover:bg-slate-800 text-slate-200 font-medium text-sm transition-colors">
-            GitHub
-          </a>
-          <a href="https://linkedin.com/in/andy-rich-1535513a6" target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 rounded-lg bg-slate-900 border border-slate-800 hover:bg-slate-800 text-slate-200 font-medium text-sm transition-colors">
-            LinkedIn
-          </a>
+      <!-- About Section -->
+      <section id="about" class="space-y-12 pt-8">
+        <div class="grid items-center gap-10 md:grid-cols-[minmax(0,1fr)_18rem]">
+          <div class="space-y-6">
+            <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-slate-50">
+              Building useful apps, learning quickly, <br class="hidden sm:inline" />and getting better with every project.
+            </h1>
+            <p class="text-lg text-slate-400 max-w-2xl leading-relaxed">
+              Hi, I'm <strong class="text-slate-200">Andy Rich</strong>. I have a degree in Software Engineering and build full-stack web and mobile apps, real-time experiences, and AI-powered features.
+            </p>
+            <p class="text-sm text-slate-300 font-medium">
+              Open to full-time software engineering opportunities.
+            </p>
+            <div class="flex flex-wrap items-center gap-4 pt-2">
+              <a href="#projects" class="px-5 py-2.5 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white font-medium text-sm transition-colors shadow-lg shadow-indigo-500/20">
+                View Projects
+              </a>
+              <a href="/Resume_2026.pdf" download="Andy-Rich-Resume.pdf" class="px-5 py-2.5 rounded-lg bg-slate-100 hover:bg-white text-slate-950 font-medium text-sm transition-colors">
+                Download Resume
+              </a>
+              <a href="https://github.com/d00375828" target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 rounded-lg bg-slate-900 border border-slate-800 hover:bg-slate-800 text-slate-200 font-medium text-sm transition-colors">
+                GitHub
+              </a>
+              <a href="https://linkedin.com/in/andy-rich-1535513a6" target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 rounded-lg bg-slate-900 border border-slate-800 hover:bg-slate-800 text-slate-200 font-medium text-sm transition-colors">
+                LinkedIn
+              </a>
+            </div>
+          </div>
+          <img src="/andy_pic.jpeg" alt="Andy Rich" class="w-full max-w-xs mx-auto aspect-[4/5] object-cover object-top rounded-2xl border border-slate-800 shadow-xl shadow-black/20" />
+        </div>
+
+        <div class="grid gap-6 md:grid-cols-[minmax(0,1fr)_0.8fr]">
+          <div class="rounded-2xl bg-slate-900/40 border border-slate-800/80 p-6 sm:p-8">
+            <h2 class="text-2xl font-bold text-slate-100 tracking-tight">How I Work</h2>
+            <div class="grid gap-6 mt-6 sm:grid-cols-3">
+              <div>
+                <h3 class="text-sm font-semibold text-indigo-400">Start with the user</h3>
+                <p class="text-sm text-slate-300 leading-relaxed mt-2">I like understanding the real problem before jumping into a solution.</p>
+              </div>
+              <div>
+                <h3 class="text-sm font-semibold text-indigo-400">Learn by building</h3>
+                <p class="text-sm text-slate-300 leading-relaxed mt-2">I learn best by turning a new idea or concept into a working project.</p>
+              </div>
+              <div>
+                <h3 class="text-sm font-semibold text-indigo-400">Care about the details</h3>
+                <p class="text-sm text-slate-300 leading-relaxed mt-2">Clean code, clear communication, and a polished experience all matter to me.</p>
+              </div>
+            </div>
+          </div>
+          <aside class="rounded-2xl bg-indigo-950/30 border border-indigo-500/20 p-6 sm:p-8">
+            <h2 class="text-2xl font-bold text-slate-100 tracking-tight">Beyond the Screen</h2>
+            <p class="text-sm text-slate-300 leading-relaxed mt-4">Outside of building software, I enjoy playing sports and staying active. I bring that same energy and curiosity to learning new things and taking on challenges.</p>
+          </aside>
         </div>
       </section>
 
@@ -79,6 +111,14 @@
                 <span class="px-2.5 py-1 text-xs font-medium bg-slate-800 text-slate-300 rounded-md">WebSockets</span>
                 <span class="px-2.5 py-1 text-xs font-medium bg-slate-800 text-slate-300 rounded-md">REST API</span>
               </div>
+              <div class="space-y-2">
+                <p class="text-xs font-semibold uppercase tracking-wider text-indigo-400">Engineering highlights</p>
+                <div class="flex flex-wrap gap-2">
+                  <span class="px-2.5 py-1 text-xs font-medium bg-indigo-500/10 border border-indigo-500/20 text-indigo-300 rounded-md">RESTful CRUD API</span>
+                  <span class="px-2.5 py-1 text-xs font-medium bg-indigo-500/10 border border-indigo-500/20 text-indigo-300 rounded-md">AI planning workflow</span>
+                  <span class="px-2.5 py-1 text-xs font-medium bg-indigo-500/10 border border-indigo-500/20 text-indigo-300 rounded-md">Task state tracking</span>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -107,6 +147,14 @@
                 <span class="px-2.5 py-1 text-xs font-medium bg-slate-800 text-slate-300 rounded-md">Express</span>
                 <span class="px-2.5 py-1 text-xs font-medium bg-slate-800 text-slate-300 rounded-md">Node.js</span>
                 <span class="px-2.5 py-1 text-xs font-medium bg-slate-800 text-slate-300 rounded-md">Render</span>
+              </div>
+              <div class="space-y-2">
+                <p class="text-xs font-semibold uppercase tracking-wider text-indigo-400">Engineering highlights</p>
+                <div class="flex flex-wrap gap-2">
+                  <span class="px-2.5 py-1 text-xs font-medium bg-indigo-500/10 border border-indigo-500/20 text-indigo-300 rounded-md">Real-time synchronization</span>
+                  <span class="px-2.5 py-1 text-xs font-medium bg-indigo-500/10 border border-indigo-500/20 text-indigo-300 rounded-md">Server-side state validation</span>
+                  <span class="px-2.5 py-1 text-xs font-medium bg-indigo-500/10 border border-indigo-500/20 text-indigo-300 rounded-md">Multi-device controller flow</span>
+                </div>
               </div>
             </div>
           </div>
@@ -139,6 +187,14 @@
                 <span class="px-2.5 py-1 text-xs font-medium bg-slate-800 text-slate-300 rounded-md">Google Gemini</span>
                 <span class="px-2.5 py-1 text-xs font-medium bg-slate-800 text-slate-300 rounded-md">Speech-to-Text</span>
               </div>
+              <div class="space-y-2">
+                <p class="text-xs font-semibold uppercase tracking-wider text-indigo-400">Engineering highlights</p>
+                <div class="flex flex-wrap gap-2">
+                  <span class="px-2.5 py-1 text-xs font-medium bg-indigo-500/10 border border-indigo-500/20 text-indigo-300 rounded-md">Voice-first mobile workflow</span>
+                  <span class="px-2.5 py-1 text-xs font-medium bg-indigo-500/10 border border-indigo-500/20 text-indigo-300 rounded-md">Speech-to-AI pipeline</span>
+                  <span class="px-2.5 py-1 text-xs font-medium bg-indigo-500/10 border border-indigo-500/20 text-indigo-300 rounded-md">Locally saved summaries</span>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -167,6 +223,14 @@
                 <span class="px-2.5 py-1 text-xs font-medium bg-slate-800 text-slate-300 rounded-md">Audio Synthesis</span>
                 <span class="px-2.5 py-1 text-xs font-medium bg-slate-800 text-slate-300 rounded-md">WAV File Format</span>
                 <span class="px-2.5 py-1 text-xs font-medium bg-slate-800 text-slate-300 rounded-md">CLI</span>
+              </div>
+              <div class="space-y-2">
+                <p class="text-xs font-semibold uppercase tracking-wider text-indigo-400">Engineering highlights</p>
+                <div class="flex flex-wrap gap-2">
+                  <span class="px-2.5 py-1 text-xs font-medium bg-indigo-500/10 border border-indigo-500/20 text-indigo-300 rounded-md">Modular C++ design</span>
+                  <span class="px-2.5 py-1 text-xs font-medium bg-indigo-500/10 border border-indigo-500/20 text-indigo-300 rounded-md">Audio synthesis pipeline</span>
+                  <span class="px-2.5 py-1 text-xs font-medium bg-indigo-500/10 border border-indigo-500/20 text-indigo-300 rounded-md">Stereo WAV serialization</span>
+                </div>
               </div>
             </div>
           </div>
@@ -197,6 +261,14 @@
                 <span class="px-2.5 py-1 text-xs font-medium bg-slate-800 text-slate-300 rounded-md">MongoDB</span>
                 <span class="px-2.5 py-1 text-xs font-medium bg-slate-800 text-slate-300 rounded-md">Node.js</span>
               </div>
+              <div class="space-y-2">
+                <p class="text-xs font-semibold uppercase tracking-wider text-indigo-400">Engineering highlights</p>
+                <div class="flex flex-wrap gap-2">
+                  <span class="px-2.5 py-1 text-xs font-medium bg-indigo-500/10 border border-indigo-500/20 text-indigo-300 rounded-md">Conversation capture flow</span>
+                  <span class="px-2.5 py-1 text-xs font-medium bg-indigo-500/10 border border-indigo-500/20 text-indigo-300 rounded-md">AI feedback pipeline</span>
+                  <span class="px-2.5 py-1 text-xs font-medium bg-indigo-500/10 border border-indigo-500/20 text-indigo-300 rounded-md">Performance insights</span>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -225,6 +297,14 @@
                 <span class="px-2.5 py-1 text-xs font-medium bg-slate-800 text-slate-300 rounded-md">Ollama</span>
                 <span class="px-2.5 py-1 text-xs font-medium bg-slate-800 text-slate-300 rounded-md">REST API</span>
                 <span class="px-2.5 py-1 text-xs font-medium bg-slate-800 text-slate-300 rounded-md">Structured JSON</span>
+              </div>
+              <div class="space-y-2">
+                <p class="text-xs font-semibold uppercase tracking-wider text-indigo-400">Engineering highlights</p>
+                <div class="flex flex-wrap gap-2">
+                  <span class="px-2.5 py-1 text-xs font-medium bg-indigo-500/10 border border-indigo-500/20 text-indigo-300 rounded-md">Sports-data feature pipeline</span>
+                  <span class="px-2.5 py-1 text-xs font-medium bg-indigo-500/10 border border-indigo-500/20 text-indigo-300 rounded-md">Local LLM inference</span>
+                  <span class="px-2.5 py-1 text-xs font-medium bg-indigo-500/10 border border-indigo-500/20 text-indigo-300 rounded-md">Structured JSON output</span>
+                </div>
               </div>
             </div>
           </div>
